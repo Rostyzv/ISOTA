@@ -56,6 +56,14 @@ class MenuFragment : Fragment() {
         binding.usu.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_userInfoFragment)
         }
+        binding.usu.setOnClickListener {
+            val bundle = Bundle().apply {
+                putString("username", username)
+            }
+            findNavController().navigate(R.id.userInfoFragment, bundle)
+        }
+
+
         return view
     }
 
