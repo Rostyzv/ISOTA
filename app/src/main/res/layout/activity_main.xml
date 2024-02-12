@@ -4,48 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/crema"
+    android:background="@color/light_crema"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp">
-
-        <TextView
-            android:id="@+id/bienvenido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¡Bienvenido!"
-            android:textSize="24sp" />
-
-        <!-- Imagen -->
-        <ImageView
-            android:id="@+id/isotaimg"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_weight="1"
-            android:src="@drawable/isota"
-            android:scaleType="centerCrop" />
-
-        <!-- Cuadro de texto con hint -->
-        <EditText
-            android:id="@+id/usuario"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:hint="@string/usuario" />
-
-        <!-- Botón para navegar a CreditActivity -->
-        <Button
-            android:id="@+id/continuar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/continuar"
-            android:scaleType="center" />
-    </LinearLayout>
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/fragment_container_view2"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="1dp"
+    app:defaultNavHost="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:navGraph="@navigation/nav_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

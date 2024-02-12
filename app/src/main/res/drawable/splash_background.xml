@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list android:opacity="opaque"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/carga"/>
+    <item android:drawable="@color/light_carga"/>
     <item>
 
         <bitmap android:src="@drawable/isota"

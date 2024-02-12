@@ -9,6 +9,10 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="descripcion">Esta app se especializa en recolectar datos sobre el juego conocido llamado Genshin Impact y ayudar a los jugadores a resolver distintos puzles</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personaje">Personaje:</string>
+    <string name="elemento">Elemento:</string>
+    <string name="arma">Arma:</string>
 
 </resources>

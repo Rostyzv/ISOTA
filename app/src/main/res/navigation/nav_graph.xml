@@ -3,26 +3,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.rosty.isota.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/mainFragment"
+        android:name="com.rosty.isota.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.rosty.isota.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/menuFragment"
+        android:name="com.rosty.isota.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_creditFragment"
+            app:destination="@id/creditFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.rosty.isota.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.rosty.isota.CreditFragment"
+        android:label="CreditFragment"
+        tools:layout="@layout/fragment_credit" />
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.rosty.isota.ItemListFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/favItemListFragment"
+        android:name="com.rosty.isota.FavItemListFragment"
+        android:label="fragment_fav_item_list"
+        tools:layout="@layout/fragment_fav_item_list" />
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.rosty.isota.UserInfoFragment"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" />
 </navigation>
