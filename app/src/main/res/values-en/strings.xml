@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="continuar">Continue</string>
+    <string name="usuario">User</string>
+    <string name="bienvenido">Welcome!</string>
+
+
+
+
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="descripcion">This app specializes in collecting data about the well-known game called Genshin Impact and helping players solve different puzzles.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <!-- Botones -->
+    <string name="app_name">ISOTA</string>
+    <string name="iniciar">Log in</string>
+
+    <string name="contacto">Contact</string>
+    <string name="creditos">Credits</string>
+    <string name="salir">Go out</string>
+    <string name="lista">List</string>
+    <string name="favoritos">Favorites</string>
+    <string name="usuarioinfo">User Info</string>
+
+    <string name="contacta">Contact</string>
+
+    <!-- Item -->
+    <string name="personaje">Character:</string>
+    <string name="elemento">Element:</string>
+    <string name="arma">Weapon:</string>
+</resources>

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3.Light">
         <item name="colorPrimary">@color/md_theme_primary</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
@@ -53,10 +53,14 @@
 
 
 
-    <style name="Theme.ISOTA" parent="AppTheme" />
-
+    <style name="Theme.ISOTA" parent="AppTheme"/>
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
-
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
+    <style name="BottomNavigation">
+        <item name="android:background">@color/md_theme_primaryContainer_highContrast</item>
+        <item name="itemIconTint">@color/md_theme_inversePrimary_mediumContrast</item>
+        <item name="itemTextColor">@color/md_theme_primaryContainer_highContrast</item>
+    </style>
+
 </resources>

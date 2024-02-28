@@ -38,6 +38,7 @@ class LoginFragment : Fragment() {
             val username1 = binding.usuario.text.toString()
 
             if (username1.isNotEmpty()) {
+                (activity as? MainActivity)?.username = username1
                 val bundle = Bundle().apply {
                     putString("username", username1)
                 }

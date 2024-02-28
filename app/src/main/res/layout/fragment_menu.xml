@@ -23,7 +23,7 @@
             android:id="@+id/creditsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Créditos"
+            android:text="@string/creditos"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:onClick="@{() -> viewModel.onCreditsClicked()}" />
@@ -32,7 +32,7 @@
             android:id="@+id/logoutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Salir"
+            android:text="@string/salir"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:onClick="@{() -> viewModel.onLogoutClicked()}" />
@@ -41,7 +41,7 @@
             android:id="@+id/lista"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lista"
+            android:text="@string/lista"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:onClick="@{() -> viewModel.onLogoutClicked()}" />
@@ -50,7 +50,7 @@
             android:id="@+id/listafav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Favoritos"
+            android:text="@string/favoritos"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:onClick="@{() -> viewModel.onLogoutClicked()}" />
@@ -59,11 +59,12 @@
             android:id="@+id/usu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UserInfo"
+            android:text="@string/usuarioinfo"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:onClick="@{() -> viewModel.onLogoutClicked()}" />
 
     </LinearLayout>
+
 
 </FrameLayout>

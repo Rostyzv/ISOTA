@@ -37,8 +37,9 @@ class UserInfoFragment : Fragment() {
         binding = FragmentUserInfoBinding.inflate(inflater, container, false)
 
         // Configurar el texto del TextView con el nombre de usuario
-        binding.usernameTextView1.text = "Usuario: $username"
 
+        val usuario = (activity as? MainActivity)?.username
+        binding.usernameTextView1.text = "Usuario:" + usuario
         return binding.root
     }
 
@@ -49,6 +50,7 @@ class UserInfoFragment : Fragment() {
                 arguments = Bundle().apply {
                     putString(ARG_USERNAME, username)
                 }
+
             }
     }
 }
